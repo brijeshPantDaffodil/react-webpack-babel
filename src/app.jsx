@@ -1,13 +1,19 @@
 import React from 'react';
 import '../styles/index.css';
 
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Expenses from './components/Expenses';
+
 export default class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>It Works!</h1>
-        <p>This React project just works including <span className="redBg">module</span> local styles.</p>
-        <p>Enjoy!</p>
+      <div className="wrapper">
+        <Header />
+        <Nav />
+        <Expenses />
+        <Footer />
       </div>
     )
   }
